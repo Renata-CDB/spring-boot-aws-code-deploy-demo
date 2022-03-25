@@ -6,6 +6,8 @@ phases:
       java: corretto11
   build:
     commands:
+      - name: Make grandlew executable
+        run: chmod +x ./gradlew
       - ./gradlew bootJar
   post_build:
     commands:
